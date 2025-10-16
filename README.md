@@ -1,13 +1,26 @@
-#  Badly  Formatted  Markdown    
+# LLM Code Deployment Project
 
-*  This is an uneven list
-* With inconsistent spacing
-   *    And weird indentation
+This project is an application that can build, deploy, and update an application based on a given brief.
 
->This quote has no space
->   This one has too many
+## Features
 
- F8 2HS huV9HK6ghjPqwCLZ9viXe
- kS5Cx Bq  KdgL 46kQC  59Lnj3Qt I8 7a 7OFUj037NWS7fwk U sFN9  7Ny68  eFg70 B  xOAQ S ecbdF20T7JJu j  9bZFPLQ 9V BLA74620La  0sn8PGYWNLT3I3b6t Jvtmu4fH7 Ua
-k Q t  Iqy EhW
-1xNKRDxdMe D4qi 2wk   0Zb 0  oUZD UJOT y5yaaLpqEjpGbU2N v Q ELc2 LWrNT2aISk  x3G tW6qHjF 1 o2 d  3Vx
+- Receives and verifies a request containing an app brief.
+- Uses an LLM-assisted generator to build the app.
+- Deploys the app to GitHub Pages.
+- Pings an evaluation API with repo details.
+- Handles update requests to modify the deployed application.
+
+## Setup
+
+1. Clone the repository.
+2. Install the dependencies: `pip install -r requirements.txt`
+3. Create a `.env` file and add your `SECRET` and `GITHUB_TOKEN`.
+4. Run the application: `python app.py`
+
+## Usage
+
+Send a POST request to the `/api-endpoint` with the application brief in JSON format.
+
+## License
+
+This project is licensed under the MIT License.
